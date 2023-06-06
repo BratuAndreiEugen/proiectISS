@@ -1,20 +1,21 @@
 package model;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
-public class EventRepresentation {
+public class EventRepresentationDTO {
     private Integer id;
-    private Event event;
+
+    private String name;
+
     private String date;
+
     private Integer avb;
+
     private Integer sold;
 
-    public EventRepresentation(){};
+    public EventRepresentationDTO(){};
 
-    public EventRepresentation(Integer id, Event event, String date, Integer avb, Integer sold) {
+    public EventRepresentationDTO(Integer id, String name, String date, Integer avb, Integer sold) {
         this.id = id;
-        this.event = event;
+        this.name = name;
         this.date = date;
         this.avb = avb;
         this.sold = sold;
@@ -28,12 +29,12 @@ public class EventRepresentation {
         this.id = id;
     }
 
-    public Event getEvent() {
-        return event;
+    public String getName() {
+        return name;
     }
 
-    public void setEvent(Event event) {
-        this.event = event;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDate() {
@@ -58,16 +59,5 @@ public class EventRepresentation {
 
     public void setSold(Integer sold) {
         this.sold = sold;
-    }
-
-    @Override
-    public String toString() {
-        return "EventRepresentation{" +
-                "id=" + id +
-                ", event=" + event +
-                ", date='" + date + '\'' +
-                ", avb=" + avb +
-                ", sold=" + sold +
-                '}';
     }
 }

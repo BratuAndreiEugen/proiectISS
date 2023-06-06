@@ -8,20 +8,20 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="402.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddEventView">
+<AnchorPane prefHeight="402.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.AddEventController">
    <children>
       <Label layoutX="253.0" layoutY="14.0" text="ADD EVENT">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="271.0" layoutY="224.0" mnemonicParsing="false" text="Confirm" />
-      <TextField layoutX="226.0" layoutY="80.0">
+      <Button fx:id="confirmButton" layoutX="271.0" layoutY="224.0" mnemonicParsing="false" text="Confirm" />
+      <TextField fx:id="nameField" layoutX="226.0" layoutY="80.0">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <DatePicker layoutX="226.0" layoutY="151.0" />
+      <DatePicker fx:id="datePicker" layoutX="226.0" layoutY="151.0" />
       <Label layoutX="147.0" layoutY="83.0" text="NAME :">
          <font>
             <Font size="14.0" />

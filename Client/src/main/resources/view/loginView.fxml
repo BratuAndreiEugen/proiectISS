@@ -8,14 +8,14 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.LoginController">
    <children>
       <Label layoutX="265.0" layoutY="14.0" text="LOGIN">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="226.0" layoutY="106.0">
+      <TextField fx:id="nameField" layoutX="226.0" layoutY="106.0">
          <font>
             <Font size="14.0" />
          </font>
@@ -25,7 +25,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <PasswordField layoutX="226.0" layoutY="164.0">
+      <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="164.0">
          <font>
             <Font size="14.0" />
          </font>
@@ -35,11 +35,11 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="262.0" layoutY="258.0" mnemonicParsing="false" text="LOGIN">
+      <Button fx:id="loginButton" layoutX="262.0" layoutY="258.0" mnemonicParsing="false" text="LOGIN">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="478.0" layoutY="334.0" mnemonicParsing="false" text="REGISTER" />
+      <Button fx:id="registerButton" layoutX="478.0" layoutY="334.0" mnemonicParsing="false" text="REGISTER" />
    </children>
 </AnchorPane>

@@ -7,14 +7,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReservationsView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.ReservationsController">
    <children>
-      <TableView layoutX="143.0" layoutY="100.0" prefHeight="200.0" prefWidth="332.0">
+      <TableView fx:id="resTable" layoutX="16.0" layoutY="100.0" prefHeight="200.0" prefWidth="571.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Id" />
-          <TableColumn prefWidth="183.0" text="Event" />
-            <TableColumn prefWidth="73.0" text="Seat" />
+          <TableColumn fx:id="columnId" prefWidth="54.0" text="Id" />
+          <TableColumn fx:id="columnEvent" prefWidth="162.0" text="Event" />
+            <TableColumn fx:id="columnSeats" prefWidth="115.0" text="Seats" />
+            <TableColumn fx:id="columnDate" prefWidth="119.0" text="Event Date" />
+            <TableColumn fx:id="columnRes" prefWidth="119.0" text="Reservation Date" />
         </columns>
       </TableView>
       <Label layoutX="223.0" layoutY="14.0" text="MY RESERVATIONS">
@@ -22,6 +23,6 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="279.0" layoutY="337.0" mnemonicParsing="false" text="CANCEL" />
+      <Button fx:id="deleteButton" layoutX="279.0" layoutY="337.0" mnemonicParsing="false" text="CANCEL" />
    </children>
 </AnchorPane>

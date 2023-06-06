@@ -8,7 +8,7 @@
 
         <property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
         <property name="connection.driver_class">org.sqlite.JDBC</property>
-        <property name="connection.url">jdbc:sqlite:C:\\Proiecte SSD\\SQLLite\\tema.db</property>
+        <property name="connection.url">jdbc:sqlite:C:\Proiecte SSD\proiectISS\dbISS.db</property>
 
         <property name="hibernate.hbm2ddl.auto">none</property>
 
@@ -16,7 +16,12 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
-        <mapping resource="concert/ConcertArtist.hbm.xml"/>
+        <mapping resource="entities/User.hbm.xml"/>
+        <mapping resource="entities/Event.hbm.xml"/>
+        <mapping resource="entities/EventRepresentation.hbm.xml"/>
+        <mapping resource="entities/Reservation.hbm.xml"/>
+        <mapping resource="entities/Seat.hbm.xml"/>
+
 
     </session-factory>
 </hibernate-configuration>

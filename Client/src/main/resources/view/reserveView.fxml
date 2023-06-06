@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="216.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReserveView">
+<AnchorPane prefHeight="216.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.ReserveController">
    <children>
       <Label layoutX="191.0" layoutY="14.0" text="RESERVE">
          <font>
@@ -19,11 +19,11 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="152.0" layoutY="85.0">
+      <TextField fx:id = "seatsField" layoutX="152.0" layoutY="85.0">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <Button layoutX="192.0" layoutY="155.0" mnemonicParsing="false" text="CONFIRM" />
+      <Button fx:id = "seatsButton" layoutX="192.0" layoutY="155.0" mnemonicParsing="false" text="CONFIRM" />
    </children>
 </AnchorPane>

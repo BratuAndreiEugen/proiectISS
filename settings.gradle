@@ -1,2 +1,6 @@
 rootProject.name = 'proiectISS'
+include 'Model'
+include 'Persistence'
+include 'Service'
+include 'Client'
 

@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ClientView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.ClientsController">
    <children>
       <Label layoutX="246.0" layoutY="14.0" text="OUR CLIENTS">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="91.0" layoutY="81.0" prefHeight="200.0" prefWidth="423.0">
+      <TableView fx:id="userTable" layoutX="91.0" layoutY="81.0" prefHeight="200.0" prefWidth="423.0">
         <columns>
-          <TableColumn prefWidth="67.0" text="Id" />
-          <TableColumn prefWidth="144.0" text="Username" />
-            <TableColumn prefWidth="211.0" text="Email" />
+          <TableColumn fx:id="columnId" prefWidth="67.0" text="Id" />
+          <TableColumn fx:id="columnUser" prefWidth="144.0" text="Username" />
+            <TableColumn fx:id="columnEmail" prefWidth="211.0" text="Email" />
         </columns>
       </TableView>
+      <Button fx:id="viewEventsButton" layoutX="91.0" layoutY="326.0" mnemonicParsing="false" text="View Planned Events" />
    </children>
 </AnchorPane>
